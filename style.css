@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 600;
+}
+
+section {
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 950px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro {
+  background: #ffe0f0;
+}
+
+.info {
+  background: #d3f8e2;
+}
+
+.doacao {
+  background: #fce38a;
+  text-align: center;
+}
+
+.contato {
+  background: #95e1d3;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.images img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+button, .btn-enviar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-doar {
+  background-color: #ff6f91;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-doar:hover {
+  background-color: #ff9671;
+}
+
+.btn-compartilhar {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-compartilhar:hover {
+  background-color: #45a049;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+footer {
+  background: #ff6f91;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 30px;
+}
