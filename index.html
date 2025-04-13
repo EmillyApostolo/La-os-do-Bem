@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laços do Bem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Laços do Bem</h1>
+    <p>Unindo solidariedade e amor para transformar vidas</p>
+  </header>
+
+  <section class="intro">
+    <h2>Bem-vindo ao nosso projeto!</h2>
+    <p>Somos estudantes de Direito da UniRuy Wyden, em Salvador, e criamos o Laços do Bem com o objetivo de arrecadar alimentos, brinquedos, produtos de higiene e doações financeiras para crianças com deficiência atendidas pelo orfanato LAR VIDA.</p>
+  </section>
+
+  <section class="images">
+    <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/hands-2786542_1280.jpg" alt="Solidariedade" />
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/children-1869265_1280.jpg" alt="Crianças Felizes" />
+    <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/hands-1205933_1280.jpg" alt="Apoio e ajuda" />
+  </section>
+
+  <section class="info">
+    <h2>Sobre o LAR VIDA</h2>
+    <p><strong>Vida Vida - Valorização Individual do Deficiente Anônimo (LAR VIDA)</strong> é um orfanato localizado em Salvador - BA que acolhe crianças com deficiência.</p>
+    <p><strong>Endereço:</strong> Av. Aliomar Baleeiro, km 5, Sítio Ipitanga, s/n - Novo Marotinho, Salvador - BA, 41388-005.</p>
+  </section>
+
+  <section class="doacao">
+    <h2>Como Ajudar</h2>
+    <p>Você pode doar alimentos, brinquedos, produtos de higiene ou qualquer valor em dinheiro para ajudar essas crianças.</p>
+    <button class="btn-doar" onclick="window.location.href='mailto:lacosdobemx@gmail.com'">Doar Agora</button>
+    <button class="btn-compartilhar" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://github.com', '_blank')">Compartilhar</button>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <form action="mailto:lacosdobemx@gmail.com" method="POST" enctype="multipart/form-data">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <input type="submit" value="Enviar Mensagem" class="btn-enviar" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Laços do Bem | UniRuy Wyden - Direito</p>
+  </footer>
+</body>
+</html>
