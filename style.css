@@ -1,117 +1,133 @@
-body {
-  font-family: 'Poppins', sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
   background: #fff0f5;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  background: linear-gradient(to right, #ff6f91, #ff9671);
   color: white;
-  padding: 40px 20px;
   text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1.5s ease;
 }
 
 h1 {
-  font-size: 36px;
-  margin: 0;
-  font-weight: 600;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 
 section {
-  padding: 20px;
-  margin: 15px auto;
-  max-width: 950px;
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 30px;
+  background: white;
   border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
 }
 
 .intro {
-  background: #ffe0f0;
+  background: #ffe3ec;
 }
 
-.info {
-  background: #d3f8e2;
-}
-
-.doacao {
-  background: #fce38a;
-  text-align: center;
-}
-
-.contato {
-  background: #95e1d3;
-}
-
-.images {
+.imagens {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 20px;
 }
 
-.images img {
-  width: 280px;
-  height: auto;
+.imagens img {
+  width: 300px;
   border-radius: 12px;
-  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.images img:hover {
+.imagens img:hover {
   transform: scale(1.05);
 }
 
-button, .btn-enviar {
-  padding: 10px 20px;
-  font-size: 16px;
+.como-ajudar {
+  background: #e0f7da;
+  text-align: center;
+}
+
+.botoes button {
+  background: #ff6f91;
   border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin: 10px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 20px;
   transition: background 0.3s ease;
 }
 
-.btn-doar {
-  background-color: #ff6f91;
-  color: white;
-  font-weight: bold;
+.botoes button:hover {
+  background: #ff9671;
 }
 
-.btn-doar:hover {
-  background-color: #ff9671;
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.btn-compartilhar {
-  background-color: #4CAF50;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-compartilhar:hover {
-  background-color: #45a049;
-}
-
-input[type="text"], input[type="email"], textarea {
+form input, form textarea {
   padding: 10px;
-  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 100%;
+  font-size: 16px;
 }
 
-textarea {
-  resize: vertical;
+form input[type="submit"] {
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: #43a047;
 }
 
 footer {
+  text-align: center;
   background: #ff6f91;
   color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
